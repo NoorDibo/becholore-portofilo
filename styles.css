@@ -73,6 +73,7 @@ ul {
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+  padding: 20px;
 }
 
 .navbar .menu a:hover{
@@ -229,7 +230,7 @@ ul {
   .menu li {
     font-size: 25px;
     text-align: center;
-    padding: 3rem;
+    padding: 5rem;
     width: 100%;
     display: table;
   }
