@@ -39,7 +39,7 @@ ul {
 }
 
 .navbar{
-  background-color: #8789C0;
+  background-color: #7CC6FE;
   height: 80px;
   padding: 0 90px;
   position: sticky; /*make the navbar stick with the site*/
@@ -66,50 +66,6 @@ ul {
   margin-top: 6px;
 }
 
-
-/* search box nav starts here*/
-.search-box{
-  position: relative;
-  padding-left: 14px;
-  padding-right: 0; 
-  max-width: 100%; 
-  margin: 0 auto;
-  justify-self: start;
-  margin-right: 20px;
-}
-
-.search-box input {
-  width: 100%;
-  height: 40px;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  color: #000000;
-  font-size: 17px;
-  text-align: center;
-}
-
-.search-box i {
-  cursor: pointer;
-  color: #000;
-  font-size: 20px;
-}
-.search-box button{
-  width: 40px;
-  height: 40px;
-  background: white;
-  cursor: pointer;
-  position: absolute;
-  border: none;
-  border-radius: 10px;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transform: scale(0.9);
-  background: linear-gradient(-20deg,#0077ff , #00c6fb);
-}
-
-/* search box navbar ends here*/
 
 /* navbar menu starts here*/
 .navbar a{
@@ -262,21 +218,20 @@ ul {
       position: fixed;
       top: 0;
       right: -100%;
-      background: #8789C0;
+      background: #7CC6FE;
       width: 450px;
       height: 100%;
       padding-top: 80px;
       z-index: 10;
   }
   
+ 
   .menu li {
-    width: 100%; 
-  }
-  .menu li {
-    padding: 25px;
     font-size: 25px;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8)
-    inset;
+    text-align: center;
+    padding: 3rem;
+    width: 100%;
+    display: table;
   }
   .menu a{
     color: rgb(0, 0, 0);
@@ -284,53 +239,11 @@ ul {
     font-size: 25px;
     
   }
-  
-  .nav-div1{
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    background: #4675db;
-    width: 100%;
-    height: 100%;
-    padding-top: 80px;
-    z-index: 10;
-  }
-  
-  .nav-div1 li {
-    width: 100%; 
-  }
-  .nav-div1 li {
-    padding: 25px;
-    font-size: 25px;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  }
-  .nav-div1 a {
-    color: #2f1c74;
-    text-decoration: none;
-    font-size: 25px;
-    
-  }
-  
-  .search-box{
-    width: 300px;
-  }
-  .search-box button {
-    position: absolute;
-  }
-  .nav-div1 li{
-    margin-right: 0PX;
-  }
 }
+  
 
 @media (max-width: 768px) {
-  .search-box {
-    flex: 0 100%;
-    width: 100%;
-     
-    }
+  
 
 .menu{
     width: 100%;
