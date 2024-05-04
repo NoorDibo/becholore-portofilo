@@ -324,3 +324,23 @@ ul {
     margin-right: 0PX;
   }
 }
+
+@media (max-width: 768px) {
+  .search-box {
+    flex: 0 100%;
+    width: 100%;
+     
+    }
+
+.menu{
+    width: 100%;
+  }
+  
+  .logo span{
+    font-size: 2.5rem;
+
+  }
+  .nav-div1 li{
+    margin-right: 0PX;
+  }
+}
