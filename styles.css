@@ -39,7 +39,7 @@ ul {
 }
 
 .navbar{
-  background-color: #28282B;
+  background-color: #8789C0;
   height: 80px;
   padding: 0 90px;
   position: sticky; /*make the navbar stick with the site*/
@@ -113,7 +113,7 @@ ul {
 
 /* navbar menu starts here*/
 .navbar a{
-  color: #ECF0F1;
+  color: #000000;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -148,7 +148,7 @@ ul {
   position: relative;
   width: 30px;
   height: 4px;
-  background: #fff;
+  background: #000000;
   border-radius: 10px;
   cursor: pointer;
   z-index: 2;
@@ -168,7 +168,7 @@ ul {
   position: absolute;
   height: 4px;
   right: 0;
-  background-color: #fff;
+  background-color: #000000;
   border-radius: 10px;
   transition: 0.3s;
 }
@@ -262,7 +262,7 @@ ul {
       position: fixed;
       top: 0;
       right: -100%;
-      background: #28282B;
+      background: #8789C0;
       width: 450px;
       height: 100%;
       padding-top: 80px;
@@ -279,7 +279,7 @@ ul {
     inset;
   }
   .menu a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 25px;
     
