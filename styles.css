@@ -175,6 +175,11 @@ ul {
 .navigation input:checked ~ .menu {
   right: 0;
 }
+.menu a.active {
+  color: #f00; /* Example: makes the active link red */
+  font-weight: bold; /* Makes it bold */
+}
+
 
 /* home setting stast here*/
 
@@ -196,10 +201,42 @@ section h1{
 section:nth-child(odd) {
   background: #8789C0;
 }
+/* gruppe section starter her*/
+.member-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+.member {
+  width: 200px; /* Juster etter behov */
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  margin: 10px;
+}
 
+.member img {
+  width: 100%; /* Gjør bildet responsive */
+  height: auto;
+  border-radius: 50%; /* Gir bildet en sirkel form */
+}
 
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
+a {
+  display: block; /* Gjør linkene blokk-elementer for bedre klikkbarhet */
+  margin: 5px 0; /* Legger til margin over og under linkene */
+  color: #007BFF; /* Blå farge på linker */
+  text-decoration: none; /* Fjerner understreking */
+}
+
+a:hover {
+  text-decoration: underline; /* Understreking ved hover for bedre tilgjengelighet */
+}
 
 @media (max-width: 1080px) {
     /* media screen for the menu*/
