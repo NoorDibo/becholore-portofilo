@@ -15,6 +15,7 @@
 --main-color: #F1C40F;
 }
 
+
 /* Body styling for consistent font and background */
 body {
   justify-content: center;
@@ -173,6 +174,27 @@ ul {
 
 .navigation input:checked ~ .menu {
   right: 0;
+}
+
+/* home setting stast here*/
+
+section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  background: #F4FAFF;
+  /*font-size: 100px;*/
+  color: #08090A;
+  font-weight: 700;
+}
+section h1{
+  padding-top: 2rem;
+  font-size: 3rem;
+
+
+}
+section:nth-child(odd) {
+  background: #8789C0;
 }
 
 
