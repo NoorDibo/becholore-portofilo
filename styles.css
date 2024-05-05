@@ -217,6 +217,9 @@ section:nth-child(odd) {
 .profilbilde img {
   width: 11rem;
   height: 11rem;
+  overflow: hidden;
+  display: block;
+  transition: all 0.5s ease 0s;
 }
 /* gruppe section starter her*/
 
