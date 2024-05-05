@@ -182,10 +182,8 @@ ul {
 
 
 /* home setting stast here*/
-
 section {
   min-height: 80vh;
-  display: flex;
   justify-content: center;
   background: #F4FAFF;
   /*font-size: 100px;*/
@@ -193,33 +191,88 @@ section {
   color: #08090A;
   font-weight: 700;
 }
+
 section h1{
   padding-top: 2rem;
   font-size: 3rem;
+  text-align: center;
+  padding-bottom: 4rem;
 }
 section:nth-child(odd) {
-  background: #8789C0;
+  background: #586F7C;
 }
+
+.Description {
+  text-align: center;
+}
+.gruppe{
+  text-align: center;
+}
+
 .gruppe-medlemer {
-  padding: 3rem 0 0 0;
+  
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background: #8789C0
+    
 }
 
 .container-gruppe {
   display: flex;
   justify-content: center;
-  margin: 3% 3%;
+  margin: 2% 2%;
+  
 }
 
 .profilbilde img {
-  width: 11rem;
-  height: 11rem;
+  width: 13rem;
+  height: 13rem;
   overflow: hidden;
   display: block;
-  transition: all 0.5s ease 0s;
+  transition: .2s ease-in-out;
+}
+
+.profilbilde{
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.medlem{
+  text-align: center;
+  border-radius: 15px;
+  padding: 3rem;
+  box-shadow: -1rem 0 3rem -1rem #000;
+  background-color: #FFFFFA;
+}
+
+.medlem:hover .profilbilde img{
+  filter: grayscale(0);
+  transform: scale(1.1, 1.1);
+}
+
+.medlem:hover{
+  box-shadow: 0px 25px 68px 6px rgb(0, 0, 0);
+  background: #FFCAD4;
+  transform: translate(0, -6px);
+}
+
+.medlem a{
+  text-decoration: none;
+}
+
+.medlem i {
+  color: #000;
+  font-size: 2.5rem;
+  transition: .2s ease-in-out;
+}
+.medlem i:hover{
+  color: white;
+}
+.medlem p {
+  color: #7a7a8c;
+}
+.medlem h3 {
+  padding: 8px;
 }
 /* gruppe section starter her*/
 
