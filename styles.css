@@ -22,7 +22,6 @@ body {
   align-items: center;
   font-family: 'Arial', sans-serif;
   line-height: 1.4;
-  background-color:	#E5E4E2 ;
   color: #17202A;
 }
 
@@ -205,24 +204,29 @@ section:nth-child(odd) {
 .Description {
   text-align: center;
 }
-.gruppe{
+.gruppen{
   text-align: center;
 }
 
+
+/* gruppe section starter her*/
+
 .gruppe-medlemer {
   
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
+  padding: 3rem 0 0 0; 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .container-gruppe {
   display: flex;
-  justify-content: center;
-  margin: 2% 2%;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+  margin: 2% 2% ;
   
 }
+
 
 .profilbilde img {
   width: 13rem;
@@ -240,7 +244,7 @@ section:nth-child(odd) {
 .medlem{
   text-align: center;
   border-radius: 15px;
-  padding: 3rem;
+  padding: 2.5rem;
   box-shadow: -1rem 0 3rem -1rem #000;
   background-color: #FFFFFA;
 }
@@ -274,8 +278,60 @@ section:nth-child(odd) {
 .medlem h3 {
   padding: 8px;
 }
-/* gruppe section starter her*/
+/* gruppe section ender her*/
 
+/* medlemr section starter her*/
+
+.document-card{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.document-container {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+
+.document {
+  padding: 3rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Valgfri skrifttype */
+}
+
+.document i {
+  font-size: 8rem; /* Størrelse på PDF-ikonet */
+  color: rgb(0, 0, 0); /* Farge på ikonet */
+}
+
+.document h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  padding-bottom: 1rem;
+}
+
+.document p {
+  color: #666; /* Grå tekstfarge for dato */
+  font-size: 18px;
+}
+
+button {
+  background-color: #007BFF; /* Blå bakgrunn */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: #0056b3; /* Mørkere blå ved hover */
+}
+
+/* medlemr section slutter her her*/
 @media (max-width: 1080px) {
     /* media screen for the menu*/
     html{
@@ -296,16 +352,7 @@ section:nth-child(odd) {
   
     }
   
-    .nav-div
-    {
-      size: 20px;
-    }
-  
     .navbar {
-      padding: 10px 15px;
-    }
-  
-    #logo-nav-div{
       padding: 10px 15px;
     }
   
@@ -337,11 +384,23 @@ section:nth-child(odd) {
     font-size: 25px;
     
   }
+  .medlem{
+    
+    
+  }
 }
   
 
 @media (max-width: 768px) {
+  .medlem{
+    
+    padding: 5rem;
+    
+    margin: 10% 10%;
+
+  }
   
+
 
 .menu{
     width: 100%;
@@ -351,7 +410,20 @@ section:nth-child(odd) {
     font-size: 2.5rem;
 
   }
-  .nav-div1 li{
-    margin-right: 0PX;
+  .medlem h3 {
+    font-size: 2rem;
   }
+  .medlem p {
+    font-size: 1.5rem;
+  }
+ .medlem i {
+  font-size: 3.5rem;
+ }
+
+  button{
+    font-size: 2.3rem;
+  }
+
 }
+  
+
