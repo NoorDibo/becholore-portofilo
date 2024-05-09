@@ -280,14 +280,14 @@ section:nth-child(odd) {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border:1px solid red;
+ 
 }
 .document-container {
   display: flex;
   justify-content: center;
   width:50%;
   padding: 5px;
-  border:1px solid red;
+ 
 }
 
 .document {
