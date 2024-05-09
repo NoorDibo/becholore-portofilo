@@ -1,36 +1,32 @@
 /* Resetting default margin and padding for all elements */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300&display=swap");
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   border-radius: 0%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-:root{
---main-color: #F1C40F;
+:root {
+  --main-color: #f1c40f;
 }
-
 
 /* Body styling for consistent font and background */
 body {
   justify-content: center;
   align-items: center;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 1.4;
-  color: #17202A;
+  color: #17202a;
 }
 
-.container{
+.container {
   max-width: 1900px;
   margin: 0 auto;
-  
 }
-
 
 /* Navigation bar styling */
 
@@ -38,37 +34,35 @@ ul {
   list-style-type: none;
 }
 
-.navbar{
-  background-color: #7CC6FE;
-  height: 80px;
+.navbar {
+  background-color: #7cc6fe;
+  height: 50px;
   padding: 0 90px;
   position: sticky; /*make the navbar stick with the site*/
-  top: 0; 
+  top: 0;
   z-index: 2; /* fix this because to not get behinde my slider image */
 }
 
 /* logo style starts here*/
-.navbar .logo{
+.navbar .logo {
   display: flex;
   align-items: center;
 }
 
-.logo i{
+.logo i {
   color: var(--main-color);
   margin-right: 6px;
   font-size: 34px;
-
 }
 
-.logo span{
+.logo span {
   font-size: 2rem;
   font-weight: 650;
   margin-top: 6px;
 }
 
-
 /* navbar menu starts here*/
-.navbar a{
+.navbar a {
   color: #000000;
   text-decoration: none;
   font-size: 18px;
@@ -76,25 +70,24 @@ ul {
   padding: 20px;
 }
 
-.navbar .menu a:hover{
+.navbar .menu a:hover {
   opacity: 1;
   text-decoration: underline;
-  color: #D0D3D4;
+  color: #d0d3d4;
 }
 
-
-.navbar .container{
+.navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
 
-.navbar ul{
+.navbar ul {
   display: flex;
 }
 
-.navbar ul li{
+.navbar ul li {
   margin-left: 20px;
 }
 
@@ -113,7 +106,7 @@ ul {
 }
 
 /* style the icon*/
-.navigation{
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,7 +127,7 @@ ul {
   top: -10px;
   width: 20px;
 }
-.menu-icon:after{
+.menu-icon:after {
   top: 10px;
   width: 25px;
 }
@@ -148,7 +141,7 @@ ul {
   opacity: 0;
 }
 
-.burger-toggle, 
+.burger-toggle,
 .menu-icon {
   display: none;
 }
@@ -159,7 +152,6 @@ ul {
 }
 
 .navigation input:checked ~ .menu-icon:before {
-
   top: 0;
   transform: rotate(-45deg);
   width: 35px;
@@ -179,26 +171,25 @@ ul {
   font-weight: bold; /* Makes it bold */
 }
 
-
 /* home setting stast here*/
 section {
   min-height: 80vh;
   justify-content: center;
-  background: #F4FAFF;
+  background: #f4faff;
   /*font-size: 100px;*/
   align-items: center;
-  color: #08090A;
+  color: #08090a;
   font-weight: 700;
 }
 
-section h1{
-  padding-top: 3rem;
+section h1 {
+  padding-top: 5rem;
   font-size: 3rem;
   text-align: center;
   padding-bottom: 4rem;
 }
 section:nth-child(odd) {
-  background: #586F7C;
+  background: #5dfdcb;
 }
 
 .home p {
@@ -211,17 +202,14 @@ section:nth-child(odd) {
   text-align: center;
   font-size: 3rem;
 }
-.gruppen{
+.gruppen {
   text-align: center;
-  
 }
-
 
 /* gruppe section starter her*/
 
 .gruppe-medlemer {
-  
-  padding: 3rem 0 0 0; 
+  padding: 2rem 0 0 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -229,55 +217,53 @@ section:nth-child(odd) {
 
 .container-gruppe {
   display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; 
-  margin: 2% 2% ;
-  
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1% 1%;
 }
-
 
 .profilbilde img {
-  width: 13rem;
-  height: 13rem;
+  width: 12rem;
+  height: 12rem;
   overflow: hidden;
   display: block;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-.profilbilde{
+.profilbilde {
   overflow: hidden;
   border-radius: 50%;
 }
 
-.medlem{
+.medlem {
   text-align: center;
   border-radius: 15px;
-  padding: 2.5rem;
+  padding: 2rem;
   box-shadow: -1rem 0 3rem -1rem #000;
-  background-color: #FFFFFA;
+  background-color: #fffffa;
 }
 
-.medlem:hover .profilbilde img{
+.medlem:hover .profilbilde img {
   filter: grayscale(0);
   transform: scale(1.1, 1.1);
 }
 
-.medlem:hover{
+.medlem:hover {
   box-shadow: 0px 25px 68px 6px rgb(0, 0, 0);
-  background: #FFCAD4;
+  background: #ffcad4;
   transform: translate(0, -6px);
 }
 
-.medlem a{
+.medlem a {
   text-decoration: none;
 }
 
 .medlem i {
   color: #000;
   font-size: 2.5rem;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
-.medlem i:hover{
+.medlem i:hover {
   color: white;
 }
 .medlem p {
@@ -290,26 +276,30 @@ section:nth-child(odd) {
 
 /* medlemr section starter her*/
 
-.document-card{
+.document-card {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border:1px solid red;
 }
 .document-container {
   display: flex;
   justify-content: center;
-  padding: 25px;
+  width:50%;
+  padding: 5px;
+  border:1px solid red;
 }
-
 
 .document {
   padding: 3rem;
+  margin:10px;
+  width: calc;
   text-align: center;
-  font-family: 'Arial', sans-serif; /* Valgfri skrifttype */
+  font-family: "Arial", sans-serif; /* Valgfri skrifttype */
 }
 
 .document i {
-  font-size: 8rem; /* Størrelse på PDF-ikonet */
+  font-size: 3.2rem; /* Størrelse på PDF-ikonet */
   color: rgb(0, 0, 0); /* Farge på ikonet */
 }
 
@@ -325,7 +315,7 @@ section:nth-child(odd) {
 }
 
 button {
-  background-color: #007BFF; /* Blå bakgrunn */
+  background-color: #007bff; /* Blå bakgrunn */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -341,82 +331,72 @@ button:hover {
 
 /* medlemr section slutter her her*/
 @media (max-width: 1080px) {
-    /* media screen for the menu*/
-    html{
-      font-size: 55%;
-    }
-    .header .container{
-      padding: 30px 0;
-    }
-    
-    .menu-icon,
-    .burger-toggle {
-      display: flex;
-      z-index: 100;
-      
-    }
-    .navigation{
-      size: 20px;
-  
-    }
-  
-    .navbar {
-      padding: 10px 15px;
-    }
-  
-  .menu {
-      flex-direction: column;
-      align-items: center;
-      justify-content: start;
-      position: fixed;
-      top: 0;
-      right: -100%;
-      background: #7CC6FE;
-      width: 450px;
-      height: 100%;
-      padding-top: 80px;
-      z-index: 10;
+  /* media screen for the menu*/
+  html {
+    font-size: 62.5%;
   }
-  
- 
+  .header .container {
+    padding: 30px 0;
+  }
+
+  .menu-icon,
+  .burger-toggle {
+    display: flex;
+    z-index: 100;
+  }
+  .navigation {
+    size: 2em;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: #7cc6fe;
+    width: 450px;
+    height: 100%;
+    padding-top: 80px;
+    z-index: 10;
+  }
+
   .menu li {
     font-size: 25px;
     text-align: center;
-    padding: 5rem;
+    padding: 2rem;
     width: 100%;
     display: table;
   }
-  .menu a{
+  .menu a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 25px;
-    
   }
-  .medlem{
-    
-    
+  .medlem {
   }
 }
-  
 
 @media (max-width: 768px) {
-  .medlem{
-    
-    padding: 5rem;
-    
-    margin: 10% 10%;
-
+  html {
+    font-size: 50%;
   }
-  
+  .medlem {
+    padding: 5rem;
+    margin: 10% 10%;
+  }
 
-
-.menu{
+  .menu {
     width: 100%;
   }
-  
-  .logo span{
-    font-size: 2.5rem;
 
+  .logo span {
+    font-size: 2.5rem;
   }
   .medlem h3 {
     font-size: 2rem;
@@ -424,14 +404,11 @@ button:hover {
   .medlem p {
     font-size: 1.5rem;
   }
- .medlem i {
-  font-size: 3.5rem;
- }
-
-  button{
-    font-size: 2.3rem;
+  .medlem i {
+    font-size: 3.5rem;
   }
 
+  button {
+    font-size: 2.3rem;
+  }
 }
-  
-

@@ -14,3 +14,16 @@ window.onscroll = () => {
         };
     });
 };
+
+
+//script to close the menu when clicking on a link
+document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('toggle-menu');
+    var menuLinks = document.querySelectorAll('.menu a');
+
+    menuLinks.forEach(function(menulink) {
+        menulink.addEventListener('click', function() {
+            menuToggle.checked = false;
+        });
+    });
+});
